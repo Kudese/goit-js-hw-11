@@ -13,6 +13,10 @@
   }
   .geleri_foto{
     width: 240px;
+   
+  }
+  .container{
     height: 160px;
     background-size: cover;
+    overflow: hidden;
   }
