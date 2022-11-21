@@ -1,0 +1,18 @@
+.search-form{
+    display: flex;
+    background-color: aqua;
+ justify-content:center;
+
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .photo-card{
+   margin: auto;
+  }
+  .geleri_foto{
+    width: 240px;
+    height: 160px;
+    background-size: cover;
+  }
