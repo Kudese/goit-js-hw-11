@@ -59,10 +59,10 @@ function paintHTML(list) {
     elLearMore.addEventListener('click', makeMore);
   }
   page++;
-  let lightbox = new SimpleLightbox('.gallery div', {
-    captionsData: 'alt',
-    captionDelay: 250,
-  });
+//   let lightbox = new SimpleLightbox('.gallery div', {
+//     captionsData: 'alt',
+//     captionDelay: 250,
+//   });
   if (list.length < 40) {
     Notify.failure(
       "We're sorry, but you've reached the end of search results."
