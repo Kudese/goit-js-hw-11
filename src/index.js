@@ -10,7 +10,7 @@ const elGellary = document.querySelector('[class="gallery"]');
 let elLearMore;
 let text = '';
 let page = 1;
-console.log(page);
+
 elInputForm.addEventListener('submit', createdList);
 
 function createdList(e) {
@@ -38,7 +38,7 @@ function createdList(e) {
   });
 }
 function paintHTML(list) {
-  console.log(list);
+  
   text += list
     .map(el => {
       return `<div class="photo-card"href="${el.largeImageURL}"><div class="container"><img class="geleri_foto" src="${el.webformatURL}" 
@@ -53,16 +53,14 @@ function paintHTML(list) {
       ' <button type="button" class="load-more">Load more</button>'
     );
     elLearMore = document.querySelector('[class="load-more"]');
-    console.log(elLearMore);
-
-    console.log(page);
+  
     elLearMore.addEventListener('click', makeMore);
   }
   page++;
-//   let lightbox = new SimpleLightbox('.gallery div', {
-//     captionsData: 'alt',
-//     captionDelay: 250,
-//   });
+  let lightbox = new SimpleLightbox('.gallery div', {
+    captionsData: 'alt',
+    captionDelay: 250,
+  });
   if (list.length < 40) {
     Notify.failure(
       "We're sorry, but you've reached the end of search results."
